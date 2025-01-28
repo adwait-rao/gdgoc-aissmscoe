@@ -6,10 +6,10 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   // Define parallax movement for each logo
-  const logo1Y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
-  const logo2Y = useTransform(scrollYProgress, [0, 1], [30, -30]);
-  const logo3Y = useTransform(scrollYProgress, [0, 1], [-70, 70]);
-  const logo4Y = useTransform(scrollYProgress, [0, 1], [50, -50]);
+  const logo1Y = useTransform(scrollYProgress, [0, 1], [-80, 70]);
+  const logo2Y = useTransform(scrollYProgress, [0, 1], [50, -50]);
+  const logo3Y = useTransform(scrollYProgress, [0, 1], [-90, 90]);
+  const logo4Y = useTransform(scrollYProgress, [0, 1], [70, -70]);
 
   // Logos with predefined positions and parallax movement
   const logos = [
@@ -115,7 +115,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: (logos.length + 2) * 0.2 }}
           >
-            GDG on Campus AISSMS COE
+            Google Developers Group on Campus AISSMS COE
           </motion.span>
           <motion.div
             className="flex gap-4 justify-center mt-8"

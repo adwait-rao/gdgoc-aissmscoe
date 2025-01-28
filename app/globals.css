@@ -41,6 +41,12 @@ body {
 }
 
 .mesh-gradient-bg {
-  background-image: url("/Images/gradient-image.svg");
-  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: radial-gradient(
+      at 100% 100%,
+      hsla(283, 60%, 35%, 0.62) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 52% 50%, hsla(12, 60%, 27%, 0.27) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(252, 60%, 35%, 0.69) 0px, transparent 50%);
 }

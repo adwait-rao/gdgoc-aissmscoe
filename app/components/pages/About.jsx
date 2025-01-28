@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14">
-      <h1 className="font-semibold text-4xl mb-10">About</h1>
+      <h1 className="clash-display font-semibold text-4xl mb-10">About</h1>
       <h2 className="font-semibold text-4xl md:text-6xl mb-6 clash-display">
         <span>We Build.</span> <span>We Learn.</span> <span>We Grow.</span>{" "}
       </h2>
@@ -32,7 +32,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <p className="block text-center text-4xl font-semibold">
+      <p className="clash-display block text-center text-4xl font-semibold">
         Be part of something extraordinary.
       </p>
     </div>
