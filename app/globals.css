@@ -1,3 +1,4 @@
+@import url("../public/fonts/clash-display.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +19,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.clash-display {
+  font-family: "ClashDisplay-Variable";
+}
+
+.resp-px {
+  @apply px-4 md:px-10 lg:px-20;
+}
+
+.radial-bg {
+  background: radial-gradient(ellipse at top, #8172e9, #41196f);
+  background-color: transparent;
+}
+
+.darker-grotesque {
+  font-family: "Darker Grotesque", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mesh-gradient-bg {
+  background-image: url("/Images/gradient-image.svg");
+  background-size: cover;
 }
