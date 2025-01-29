@@ -9,13 +9,13 @@ export default function Member() {
           <Link href={"/"}>
             {" "}
             {/* Replace # with the link to your Github */}
-            <FaGithub className="text-cream w-10 h-10" />
+            <FaGithub className="text-cream w-10 h-10 hover:text-lightPurple transition-colors" />
           </Link>
           <Link href={"/"}>
-            <FaLinkedin className="text-cream w-10 h-10" />
+            <FaLinkedin className="text-cream w-10 h-10 hover:text-blue-500 transition-colors" />
           </Link>
           <Link href={"/"}>
-            <FaTwitter className="text-cream w-10 h-10" />
+            <FaTwitter className="text-cream w-10 h-10 hover:text-blue-300 transition-colors" />
           </Link>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Member() {
         <h2 className="clash-display font-semibold text-2xl mt-4">
           Adwait Rao
         </h2>
-        <p className="clash-display font-normal text-lg text-[#C6BEFF] mt-2">
+        <p className="clash-display font-normal text-md text-[#C6BEFF] mt-1">
           Web Development Lead
         </p>
       </div>

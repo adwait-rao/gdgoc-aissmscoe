@@ -4,6 +4,8 @@ import Home from "./components/pages/Home";
 import DiscordButton from "./components/DiscordButton";
 import WhatsappButton from "./components/WhatsappButton";
 import Team from "./components/pages/Team";
+import Blogs from "./components/pages/Blogs";
+import Gallery from "./components/pages/Gallery";
 
 export default function HomePage() {
   return (
@@ -12,6 +14,8 @@ export default function HomePage() {
       <About />
       <Events />
       <Team />
+      <Blogs />
+      <Gallery />
       <div className="clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col gap-3 justify-end">
         <DiscordButton />
         <WhatsappButton />

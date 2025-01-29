@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function WhatsappButton() {
   return (
     <motion.a
-      className="flex items-center text-[#25D366] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl absolute right-0 bottom-16"
+      className="flex items-center text-[#1a9949] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl absolute right-0 bottom-16"
       aria-label="Join Whatsapp Group"
       whileHover={{ width: "280px" }} // Expands to 200px on hover
       initial={{ width: "50px" }} // Starts with only the icon

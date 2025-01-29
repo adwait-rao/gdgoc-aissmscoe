@@ -38,7 +38,7 @@ export default function Home() {
       src: "/Images/google-gemini-icon.svg",
       alt: "Google Gemini",
       x: "30%",
-      y: "30%",
+      y: "16%",
       style: { y: logo4Y },
     },
     {

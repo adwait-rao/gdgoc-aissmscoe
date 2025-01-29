@@ -50,3 +50,9 @@ body {
     radial-gradient(at 52% 50%, hsla(12, 60%, 27%, 0.27) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(252, 60%, 35%, 0.69) 0px, transparent 50%);
 }
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
