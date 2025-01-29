@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+import { fadeInUp } from "../../utils/animation";
+import motion from "framer-motion";
 
 export default function About() {
   return (
-    <div className="h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={fadeInUp}
+      className="min-h-[calc(100vh - 104px)] w-full bg-lightPink text-darkPurple resp-px p-14"
+    >
       <h1 className="clash-display font-semibold text-4xl mb-10">About</h1>
       <h2 className="font-semibold text-4xl md:text-6xl mb-6 clash-display">
         <span>We Build.</span> <span>We Learn.</span> <span>We Grow.</span>{" "}
@@ -35,6 +43,6 @@ export default function About() {
       <p className="clash-display block text-center text-4xl font-semibold">
         Be part of something extraordinary.
       </p>
-    </div>
+    </motion.div>
   );
 }
