@@ -40,19 +40,16 @@ body {
   font-style: normal;
 }
 
-.mesh-gradient-bg {
-  background-color: hsla(0, 0%, 0%, 1);
-  background-image: radial-gradient(
-      at 100% 100%,
-      hsla(283, 60%, 35%, 0.62) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 52% 50%, hsla(12, 60%, 27%, 0.27) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(252, 60%, 35%, 0.69) 0px, transparent 50%);
+.masonry {
+  --gap: clamp(1rem, 5vmin, 2rem);
+  columns: 150px;
+  gap: var(--gap);
+  width: 96%;
+  max-width: 960px;
+  margin: 5rem auto;
 }
 
-.masonry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
 }
