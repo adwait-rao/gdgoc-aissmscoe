@@ -8,6 +8,18 @@
   --foreground: #171717;
 }
 
+.underline-effect {
+  @apply relative p-0;
+}
+
+.underline-effect::after {
+  @apply content-[''] absolute w-full h-[5px] left-0 bottom-[-4px] bg-lightPurple origin-bottom-right hover:origin-bottom-left scale-x-0 hover:scale-x-100 transition-transform duration-300;
+}
+
+/* .heading-text {
+    @apply bg-gradient-to-br from-[#FFFFFF] to-[#AAAAAA] bg-clip-text p-4 font-radiofont text-6xl font-extrabold text-transparent;
+  } */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

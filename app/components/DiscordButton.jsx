@@ -6,8 +6,8 @@ export default function DiscordButton() {
     <motion.a
       className=" flex items-center text-[#5865F2] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-xl absolute right-0"
       aria-label="Join Discord Server"
-      whileHover={{ width: "225px" }} // Expands to 200px on hover
-      initial={{ width: "50px" }} // Starts with only the icon
+      whileHover={{ width: "225px" }}
+      initial={{ width: "50px" }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       href="https://discord.com"
     >

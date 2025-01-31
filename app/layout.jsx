@@ -37,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={clashDisplay.variable}>
-      <body className={`${darkerGrotesque.variable} antialiased`}>
+      <body className={`${darkerGrotesque.variable} antialiased page`}>
         <Navbar />
         {children}
       </body>

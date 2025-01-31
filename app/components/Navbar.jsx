@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,11 +30,22 @@ export default function Navbar() {
         scrolled ? "backdrop-blur-xl backdrop-brightness-75" : ""
       }`}
     >
+      {/* Logo */}
       <div className="flex gap-4 items-center">
         <img className="w-10 h-10" src="/Images/gdg-logo.svg" alt="" />
         <p>GDGOC AISSMSCOE</p>
       </div>
-      <div className="cursor-pointer">Menu</div>
+      {/* Menu Button */}
+      <div
+        className="cursor-pointer text-3xl"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? (
+          <MdClose className="transition-all" />
+        ) : (
+          <GiHamburgerMenu className="transition-all" />
+        )}
+      </div>
     </div>
   );
 }
