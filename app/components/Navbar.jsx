@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const menuItems = [
   { href: "#home", label: "Home" },
@@ -56,11 +57,39 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 104) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 bg-transparent ${
+        scrolled ? "backdrop-blur-md backdrop-brightness-75" : " "
+      } transition-all`}
+    >
       <div className="flex justify-between items-center h-20 resp-px">
-        <Link href="/" className="clash-display font-semibold text-xl">
-          GDSC AISSMS IOIT
+        <Link
+          href="/"
+          className="flex justify-center items-center gap-3 clash-display font-semibold text-lg"
+        >
+          <Image
+            src={"/Images/gdg-logo.svg"}
+            width={40}
+            height={40}
+            alt="gdg logo"
+          />
+          GDGOC AISSMS COE
         </Link>
 
         {/* Hamburger Icon */}
@@ -120,7 +149,7 @@ export default function Navbar() {
                       custom={index}
                     >
                       <Link
-                        className="underline-effect hover:text-purple transition-colors"
+                        className="underline-effect hover:text-lightPurple transition-colors"
                         href={item.href}
                         onClick={() => setMenuOpen(false)}
                       >
