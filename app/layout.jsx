@@ -2,6 +2,7 @@ import { Darker_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import localFont from "next/font/local";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
       <body className={`${darkerGrotesque.variable} antialiased page`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

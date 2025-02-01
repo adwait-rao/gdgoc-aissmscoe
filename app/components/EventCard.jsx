@@ -4,7 +4,7 @@ import { FaRegClock } from "react-icons/fa6";
 export default function EventCard() {
   return (
     <div className="clash-display hover:scale-105 transition-transform text-xl bg-darkPurple border shadow-md overflow-hiddenborder border-purple p-5">
-      <div className="h-40 w-full bg-lightPurple mb-5">
+      <div className="w-full aspect-[16/9] bg-lightPurple mb-5">
         {/* image container */}
       </div>
       <p className="text-sm text-lightPurple flex gap-5 items-center align-middle mb-4">

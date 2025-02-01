@@ -17,7 +17,6 @@ export default function HomePage() {
       <Team />
       <Blogs />
       <Gallery />
-      <Footer />
       <div className="clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col gap-3 justify-end">
         <DiscordButton />
         <WhatsappButton />

@@ -74,7 +74,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 bg-transparent ${
+      className={`fixed top-0 left-0 w-full z-50 bg-transparent text-cream ${
         menuOpen ? "backdrop-blur-md backdrop-brightness-75 h-screen" : ""
       } ${
         scrolled || menuOpen ? "backdrop-blur-md backdrop-brightness-75" : ""
@@ -134,7 +134,7 @@ export default function Navbar() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-sm"
+              className="fixed top-0 left-0 w-full h-full bg-purple/50 backdrop-blur-sm transition delay-300"
             >
               <motion.div
                 variants={menuVariants}

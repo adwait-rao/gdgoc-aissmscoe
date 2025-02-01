@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="bg-darkPurple">
+    <div className="bg-darkPurple text-cream">
       <div className="resp-px flex flex-col lg:flex-row justify-between items-center py-8">
         {/* Logo and Description */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-5 clash-display font-semibold text-cream text-center lg:text-left mb-8 lg:mb-0">
@@ -49,7 +49,7 @@ export default function Footer() {
       <div className="grid place-content-center py-9 clash-display text-center">
         <a
           href="mailto:gdgocaissmscoe@gmail.com"
-          className="flex gap-2 text-md justify-center mb-4 hover:text-lightPurple transition-all"
+          className="flex gap-2 text-lg justify-center mb-4 hover:text-lightPurple transition-all"
         >
           <BiLogoGmail className="w-6 h-6" /> gdgocaissmscoe@gmail.com
         </a>

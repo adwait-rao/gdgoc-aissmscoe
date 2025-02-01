@@ -69,7 +69,7 @@ const teamData = [
 
 export default function TeamPage() {
   return (
-    <div className="pt-20 min-h-screen bg-purple text-cream">
+    <div className="pt-20 min-h-screen bg-purple text-cream resp-px">
       <div className="container mx-auto px-4 py-16">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
