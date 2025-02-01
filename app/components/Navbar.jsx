@@ -6,12 +6,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const menuItems = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#events", label: "Events" },
-  { href: "#team", label: "Team" },
-  { href: "#blogs", label: "Blogs" },
-  { href: "#gallery", label: "Gallery" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#events", label: "Events" },
+  { href: "/#team", label: "Team" },
+  { href: "/#blogs", label: "Blogs" },
+  { href: "/#gallery", label: "Gallery" },
 ];
 
 const menuVariants = {
@@ -52,12 +52,12 @@ const backdropVariants = {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 104) {
@@ -75,7 +75,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 bg-transparent ${
-        scrolled ? "backdrop-blur-md backdrop-brightness-75" : " "
+        menuOpen ? "backdrop-blur-md backdrop-brightness-75 h-screen" : ""
+      } ${
+        scrolled || menuOpen ? "backdrop-blur-md backdrop-brightness-75" : ""
       } transition-all`}
     >
       <div className="flex justify-between items-center h-20 resp-px">

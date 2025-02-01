@@ -1,5 +1,6 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   // Hook into the scroll position
@@ -126,12 +127,20 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: (logos.length + 4) * 0.2 }}
           >
-            <button className="radial-bg border border-cream font-medium text-xl px-5 py-2 backdrop-blur-lg">
+            <Link
+              href={
+                "https://gdg.community.dev/gdg-on-campus-aissms-college-of-engineering-pune-india/"
+              }
+              className="radial-bg border border-cream font-medium text-xl px-5 py-2 backdrop-blur-lg"
+            >
               Join our community
-            </button>
-            <button className="bg-cream text-purple font-medium text-xl px-5 py-2">
+            </Link>
+            <Link
+              href={"#events"}
+              className="bg-cream text-purple font-medium text-xl px-5 py-2"
+            >
               Events
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>
