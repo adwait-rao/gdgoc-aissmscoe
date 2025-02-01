@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <div className="min-h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14">
+    <div
+      id="about"
+      className="scroll-mt-[80px] min-h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14"
+    >
       <h1 className="clash-display font-semibold text-4xl mb-10">About</h1>
       <h2 className="font-semibold text-4xl md:text-6xl mb-6 clash-display">
         <span>We Build.</span> <span>We Learn.</span> <span>We Grow.</span>{" "}

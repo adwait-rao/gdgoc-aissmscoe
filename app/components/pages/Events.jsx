@@ -2,7 +2,10 @@ import EventCard from "../EventCard";
 
 export default function Events() {
   return (
-    <div className="h-[calc(100vh - 104px)] w-full bg-gradient-to-b from-purple to-darkPurple text-cream resp-px p-14">
+    <div
+      id="events"
+      className="scroll-mt-[80px] h-[calc(100vh - 104px)] w-full bg-gradient-to-b from-purple to-darkPurple text-cream resp-px p-14"
+    >
       <h1 className="clash-display font-semibold text-4xl mb-10">Events</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         <EventCard />

@@ -1,7 +1,10 @@
 export default function Gallery() {
   return (
     <div>
-      <div className=" h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14">
+      <div
+        id="gallery"
+        className="scroll-mt-[80px] h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14"
+      >
         <p className="clash-display font-semibold text-3xl mb-12">Gallery</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">

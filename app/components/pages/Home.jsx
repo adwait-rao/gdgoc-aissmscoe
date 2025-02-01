@@ -72,7 +72,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="h-screen text-cream overflow-hidden relative mesh-gradient-bg">
+    <div
+      id="home"
+      className="h-screen text-cream overflow-hidden relative mesh-gradient-bg"
+    >
       {/* Background Parallax Logos */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {logos.map((logo, index) => (

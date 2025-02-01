@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="scroll-smooth">
       <Home />
       <About />
       <Events />
@@ -22,6 +22,6 @@ export default function HomePage() {
         <DiscordButton />
         <WhatsappButton />
       </div>
-    </>
+    </div>
   );
 }
