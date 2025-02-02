@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -30,17 +31,26 @@ export default function Footer() {
 
           {/* Social Media Links */}
           <div>
-            <ul className="flex flex-col gap-5 darker-grotesque font-medium text-lg text-center lg:text-left">
-              <li className="flex gap-2 items-center justify-center lg:justify-start underline-effect">
+            <div className="flex flex-col gap-5 darker-grotesque font-medium text-lg text-center lg:text-left">
+              <Link
+                href="https://www.instagram.com/gdg.aissmscoe/"
+                className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+              >
                 <FaInstagram /> Instagram
-              </li>
-              <li className="flex gap-2 items-center justify-center lg:justify-start underline-effect">
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/gdg-on-campus-aissmscoe/"
+                className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+              >
                 <FaLinkedin /> Linkedin
-              </li>
-              <li className="flex gap-2 items-center justify-center lg:justify-start underline-effect">
+              </Link>
+              <Link
+                href="https://www.github.com/adwait-rao"
+                className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+              >
                 <FaGithub /> Github
-              </li>
-            </ul>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -49,9 +59,9 @@ export default function Footer() {
       <div className="grid place-content-center py-9 clash-display text-center">
         <a
           href="mailto:gdgocaissmscoe@gmail.com"
-          className="flex gap-2 text-lg justify-center mb-4 hover:text-lightPurple transition-all"
+          className="flex gap-2 text-lg justify-center align-middle mb-4 hover:text-lightPurple transition-all"
         >
-          <BiLogoGmail className="w-6 h-6" /> gdgocaissmscoe@gmail.com
+          <BiLogoGmail className="w-6 h-6" /> dsc@aissmscoe.com
         </a>
         <p className="text-center">
           Made with 💗 By Adwait Rao and Team @ GDG AISSMSCOE

@@ -1,4 +1,5 @@
 import EventCard from "../EventCard";
+import RadialButton from "../RadialButton";
 
 export default function Events() {
   return (
@@ -17,9 +18,7 @@ export default function Events() {
         Have an idea for an event? Let’s make it happen.
       </p>
 
-      <button className="clash-display radial-bg border border-cream font-medium text-xl px-5 py-2 backdrop-blur-lg">
-        Propose an Event
-      </button>
+      <RadialButton href={""}>Propose an Event</RadialButton>
     </div>
   );
 }

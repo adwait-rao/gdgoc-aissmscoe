@@ -22,7 +22,7 @@ export default function EventCard() {
         learn or experience.
       </p>
       <div>
-        <button className="font-semibold text-darkPurple bg-lightPink px-4 py-2 btn-pink-slidein">
+        <button className="font-semibold text-darkPurple bg-lightPink hover:bg-lightPurple hover:text-cream transition-colors px-4 py-2 btn-pink-slidein">
           RSVP Now
         </button>
       </div>

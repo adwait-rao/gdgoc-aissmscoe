@@ -58,7 +58,15 @@ body {
 
 .radial-bg {
   background: radial-gradient(ellipse at top, #8172e9, #41196f);
-  background-color: transparent;
+  border: 1px solid #f3e8d2; /* Cream border */
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .darker-grotesque {
