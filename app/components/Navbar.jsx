@@ -93,12 +93,23 @@ export default function Navbar() {
           />
           GDGOC AISSMS COE
         </Link>
+        <div className="hidden lg:flex gap-6">
+          {menuItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="clash-display font-medium text-lg underline-effect transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
 
         {/* Hamburger Icon */}
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
-          className="z-50 flex flex-col gap-1.5 p-2"
+          className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
         >
           <motion.span
             animate={{
