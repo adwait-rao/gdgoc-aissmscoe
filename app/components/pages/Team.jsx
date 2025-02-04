@@ -8,7 +8,7 @@ import client from "../../lib/contentful";
 export default function Team() {
   const [teamLeads, setTeamLeads] = useState([]);
 
-  console.log(process.env.NEXT_CONTENTFUL_SPACE_ID);
+  console.log(process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID);
   useEffect(() => {
     client
       .getEntries({ content_type: "teamMember", order: "sys.createdAt" })
