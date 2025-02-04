@@ -1,7 +1,36 @@
-import React from "react";
+"use client";
 import BlogTitles from "../BlogTitles";
+import client from "../../lib/contentful";
+import React, { useState, useEffect } from "react";
 
 export default function Blogs() {
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const response = await client.getEntries({
+          content_type: "blogs",
+        });
+
+        const formattedBlogs = response.items.map((blog) => ({
+          id: blog.sys.id,
+          blogTitle: blog.fields.blogTitle,
+          author: blog.fields.author,
+          url: blog.fields.url,
+        }));
+
+        setBlogs(formattedBlogs);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBlogs();
+  }, []);
   return (
     <div
       id="blogs"
@@ -12,12 +41,19 @@ export default function Blogs() {
         Dive into insights, stories, and tutorials straight from the minds of
         our community.
       </p>
-      <div className="flex flex-col gap-6">
-        {/* render all blog titles here */}
-        <BlogTitles />
-        <BlogTitles />
-        <BlogTitles />
-      </div>
+      {loading ? (
+        <div className="min-h-[50vh] flex items-center justify-center">
+          <div className="clash-display text-2xl text-darkPurple/80 animate-pulse">
+            Loading Blogs...
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-col gap-4">
+          {blogs.map((blog) => (
+            <BlogTitles key={blog.id} blog={blog} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
