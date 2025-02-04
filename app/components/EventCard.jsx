@@ -4,7 +4,7 @@ export default function EventCard({ event }) {
   if (!event) return null;
 
   return (
-    <div className="clash-display hover:scale-105 transition-transform text-xl bg-darkPurple border shadow-md overflow-hidden border border-purple p-5">
+    <div className="clash-display hover:scale-105 transition-transform text-xl bg-darkPurple shadow-md overflow-hidden border border-purple p-5">
       <div className="w-full aspect-[16/9] bg-lightPurple mb-5">
         {event.image && (
           <img
@@ -20,7 +20,7 @@ export default function EventCard({ event }) {
         </span>
         •{" "}
         <span className="flex align-middle justify-between items-center gap-2">
-          <FaRegClock /> {event.dateAndTime || "TBA"}
+          <FaRegClock /> {event.dateAndTime.split("T").join(" ") || "TBA"}
         </span>
       </p>
       <p className="font-semibold mb-2">{event.title || "Event Name"}</p>
