@@ -14,12 +14,12 @@ export default function EventCard({ event }) {
           />
         )}
       </div>
-      <p className="text-sm text-lightPurple flex gap-5 items-center align-middle mb-4">
-        <span className="flex align-middle justify-between items-center gap-2">
+      <p className="text-[1rem] darker-grotesque font-medium text-lightPurple flex gap-5 items-center align-middle mb-4">
+        <span className="flex align-middle justify-center items-center gap-2">
           <FaLocationDot /> {event.location || "Online"}{" "}
         </span>
         •{" "}
-        <span className="flex align-middle justify-between items-center gap-2">
+        <span className="flex align-middle justify-center items-center gap-2">
           <FaRegClock /> {event.dateAndTime.split("T").join(" ") || "TBA"}
         </span>
       </p>

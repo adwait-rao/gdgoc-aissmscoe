@@ -138,7 +138,7 @@ export default function TeamPage() {
                 <h3 className="clash-display text-2xl font-semibold mb-8 text-center">
                   {department.name}
                 </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 place-items-center items-start">
                   {department.members.map((member) => (
                     <Member key={uuid()} member={member} />
                   ))}

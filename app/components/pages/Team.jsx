@@ -52,7 +52,7 @@ export default function Team() {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 place-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 place-items-center items-start">
           {teamLeads.map((member) => {
             if (member.role.includes("Lead") || member.role.includes("Head")) {
               return <Member key={member.id} member={member} />;
