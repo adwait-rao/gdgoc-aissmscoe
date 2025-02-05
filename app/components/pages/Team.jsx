@@ -50,7 +50,9 @@ export default function Team() {
       </div>
 
       {loading ? (
-        <div>Loading...</div>
+        <div className="text-center grid place-content-center clash-display font-light text-cream">
+          <p>Loading...</p>
+        </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 place-items-center items-start">
           {teamLeads.map((member) => {

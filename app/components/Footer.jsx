@@ -64,7 +64,7 @@ export default function Footer() {
           <BiLogoGmail className="w-6 h-6" /> dsc@aissmscoe.com
         </a>
         <p className="text-center">
-          Made with 💗 By Adwait Rao and Team @ GDG AISSMSCOE
+          Made with 💗 By Adwait Rao @ GDG AISSMSCOE
         </p>
       </div>
     </div>
