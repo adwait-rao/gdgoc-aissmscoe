@@ -23,9 +23,15 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 mb-8 lg:mb-0">
           <div>
             <ul className="flex flex-col gap-5 darker-grotesque font-medium text-lg text-center lg:text-left">
-              <li className="underline-effect">Team</li>
-              <li className="underline-effect">Blogs</li>
-              <li className="underline-effect">Events</li>
+              <Link href="/#team" className="underline-effect">
+                Team
+              </Link>
+              <Link href="/#blogs" className="underline-effect">
+                Blogs
+              </Link>
+              <Link href="/#events" className="underline-effect">
+                Events
+              </Link>
             </ul>
           </div>
 
