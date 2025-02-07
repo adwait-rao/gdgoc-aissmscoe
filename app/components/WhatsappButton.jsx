@@ -9,7 +9,7 @@ export default function WhatsappButton() {
       whileHover={{ width: "280px" }} // Expands to 200px on hover
       initial={{ width: "50px" }} // Starts with only the icon
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      href="https://discord.com"
+      href="https://chat.whatsapp.com/GhxluByMZ45BAoc6KB3rtV"
     >
       {/* Discord Icon */}
       <img
