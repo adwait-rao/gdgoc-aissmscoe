@@ -22,9 +22,9 @@ export default function WhatsappButton() {
       <motion.span
         className="ml-2"
         style={{ whiteSpace: "nowrap" }}
-        initial={{ opacity: 0, x: 0 }} // Hidden and shifted left initially
-        animate={{ opacity: 1, x: 0 }} // Visible and centered on hover
-        transition={{ delay: 0.2, duration: 0.3 }} // Smooth fade and slide
+        initial={{ opacity: 0, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
       >
         Join Whatsapp Community
       </motion.span>

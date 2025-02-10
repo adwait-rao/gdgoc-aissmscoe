@@ -4,6 +4,7 @@ import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
+  const year = new Date(Date.now());
   return (
     <div className="bg-darkPurple text-cream">
       <div className="resp-px flex flex-col lg:flex-row justify-between items-center py-8">
@@ -69,8 +70,12 @@ export default function Footer() {
         >
           <BiLogoGmail className="w-6 h-6" /> dsc@aissmscoe.com
         </a>
-        <p className="text-center">
+        <p className="text-center mb-7">
           Made with 💗 By Adwait Rao @ GDG AISSMSCOE
+        </p>
+        <p className="text-center font-light text-[#97a5ff]">
+          &#169; Copyright {year.getFullYear()} GDG AISSMSCOE. All Rights
+          Reserved.
         </p>
       </div>
     </div>
